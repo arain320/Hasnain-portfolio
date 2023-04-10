@@ -26,7 +26,8 @@ li {
   list-style: none;
 }
 
-.btn-secondary, .btn-primary {
+.btn-secondary,
+.btn-primary {
   display: inline-block;
   border: none;
   outline: none;
@@ -37,7 +38,10 @@ li {
   font-family: "Alkatra", cursive;
   cursor: pointer;
 }
-.btn-secondary:hover, .btn-primary:hover, .btn-secondary:focus, .btn-primary:focus {
+.btn-secondary:hover,
+.btn-primary:hover,
+.btn-secondary:focus,
+.btn-primary:focus {
   transform: scale(0.98);
 }
 
@@ -51,7 +55,12 @@ li {
   color: #fff;
 }
 
-.box-6, .box-5, .box-4, .box-3, .box-2, .box-1 {
+.box-6,
+.box-5,
+.box-4,
+.box-3,
+.box-2,
+.box-1 {
   font-size: 1.5rem;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -86,7 +95,9 @@ li {
   background-color: #0d182a;
 }
 
-.third-card, .second-card, .first-card {
+.third-card,
+.second-card,
+.first-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,20 +107,28 @@ li {
   height: 6rem;
   color: #fff;
 }
-.third-card p, .second-card p, .first-card p {
+.third-card p,
+.second-card p,
+.first-card p {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
-.third-card p span, .second-card p span, .first-card p span {
+.third-card p span,
+.second-card p span,
+.first-card p span {
   font-size: 2rem;
   font-weight: 500;
 }
-.third-card p i, .second-card p i, .first-card p i {
+.third-card p i,
+.second-card p i,
+.first-card p i {
   font-size: 1.4rem;
 }
-.third-card span, .second-card span, .first-card span {
+.third-card span,
+.second-card span,
+.first-card span {
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -186,7 +205,7 @@ li {
 }
 @media (max-width: 550px) {
   .heading-light {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 }
 @media (max-width: 500px) {
@@ -199,7 +218,7 @@ li {
 }
 @media (max-width: 420px) {
   .heading-light {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 @media (max-width: 380px) {
@@ -441,6 +460,14 @@ header #menu-bar {
     width: 100%;
   }
 }
+@media (max-width: 550px) {
+  .about .about-container .about-content .about-text p {
+    font-size: 1.6rem;
+  }
+  .about .about-container .about-content .about-skill p {
+    font-size: 1.6rem;
+  }
+}
 .project {
   max-width: 1120px;
   margin: 3rem auto 1rem auto;
@@ -509,10 +536,12 @@ header #menu-bar {
   color: #666;
   font-size: 2rem;
 }
-.project .box-container a .box:hover h3, .project .box-container a .box:focus h3 {
+.project .box-container a .box:hover h3,
+.project .box-container a .box:focus h3 {
   text-decoration: underline;
 }
-.project .box-container a .box:hover .info, .project .box-container a .box:focus .info {
+.project .box-container a .box:hover .info,
+.project .box-container a .box:focus .info {
   transition-delay: 0.2s;
   opacity: 1;
   top: 50%;
@@ -571,7 +600,8 @@ header #menu-bar {
   cursor: pointer;
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
-.service .service-container .service-card:hover, .service .service-container .service-card:focus {
+.service .service-container .service-card:hover,
+.service .service-container .service-card:focus {
   transform: translateY(-7%);
 }
 .service .service-container .service-card .icon {
@@ -594,7 +624,12 @@ header #menu-bar {
   align-items: center;
   text-transform: capitalize;
 }
-
+@media (max-width: 550px) {
+  .service .service-container .service-card .name {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
 .contact {
   width: 100%;
   display: flex;
@@ -662,14 +697,15 @@ header #menu-bar {
   border-bottom: 0.1rem solid #000000;
   text-transform: capitalize;
 }
-.contact .contact-container .contact-form form .item input:focus ~ label, .contact .contact-container .contact-form form .item input:valid ~ label {
+.contact .contact-container .contact-form form .item input:focus ~ label,
+.contact .contact-container .contact-form form .item input:valid ~ label {
   top: -2rem;
   left: 0;
   color: #2a9d8f;
   font-size: 1.2rem;
 }
 .contact .contact-container .contact-form form .item label {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #2a9d8f;
   position: absolute;
   top: 0;
@@ -693,7 +729,20 @@ header #menu-bar {
   border-bottom: 0.1rem solid #000000;
   text-transform: capitalize;
 }
-.contact .contact-container .contact-form form .text-area textarea:focus ~ label, .contact .contact-container .contact-form form .text-area textarea:valid ~ label {
+.contact
+  .contact-container
+  .contact-form
+  form
+  .text-area
+  textarea:focus
+  ~ label,
+.contact
+  .contact-container
+  .contact-form
+  form
+  .text-area
+  textarea:valid
+  ~ label {
   top: -2rem;
   left: 0;
   color: #2a9d8f;
@@ -984,4 +1033,4 @@ header #menu-bar {
   .hero-section .detail .personnel h2 {
     font-size: 2.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
