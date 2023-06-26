@@ -26,8 +26,7 @@ li {
   list-style: none;
 }
 
-.btn-secondary,
-.btn-primary {
+.btn-secondary, .btn-primary {
   display: inline-block;
   border: none;
   outline: none;
@@ -38,29 +37,21 @@ li {
   font-family: "Alkatra", cursive;
   cursor: pointer;
 }
-.btn-secondary:hover,
-.btn-primary:hover,
-.btn-secondary:focus,
-.btn-primary:focus {
+.btn-secondary:hover, .btn-primary:hover, .btn-secondary:focus, .btn-primary:focus {
   transform: scale(0.98);
 }
 
 .btn-primary {
-  background-color: #1d3557;
+  background-color: #2196f3;
   color: #fff;
 }
 
 .btn-secondary {
-  background-color: #e63946;
+  background-color: #ed3833;
   color: #fff;
 }
 
-.box-6,
-.box-5,
-.box-4,
-.box-3,
-.box-2,
-.box-1 {
+.box-6, .box-5, .box-4, .box-3, .box-2, .box-1 {
   font-size: 1.5rem;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -72,32 +63,30 @@ li {
 }
 
 .box-1 {
-  background-color: #2a9d8f;
+  background-color: #2196f3;
 }
 
 .box-2 {
-  background-color: #f4a261;
+  background-color: #ed3833;
 }
 
 .box-3 {
-  background-color: #457b9d;
+  background-color: #2196f3;
 }
 
 .box-4 {
-  background-color: #e76f51;
+  background-color: #ed3833;
 }
 
 .box-5 {
-  background-color: #e63946;
+  background-color: #2196f3;
 }
 
 .box-6 {
-  background-color: #0d182a;
+  background-color: #ed3833;
 }
 
-.third-card,
-.second-card,
-.first-card {
+.third-card, .second-card, .first-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,28 +96,20 @@ li {
   height: 6rem;
   color: #fff;
 }
-.third-card p,
-.second-card p,
-.first-card p {
+.third-card p, .second-card p, .first-card p {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
-.third-card p span,
-.second-card p span,
-.first-card p span {
+.third-card p span, .second-card p span, .first-card p span {
   font-size: 2rem;
   font-weight: 500;
 }
-.third-card p i,
-.second-card p i,
-.first-card p i {
+.third-card p i, .second-card p i, .first-card p i {
   font-size: 1.4rem;
 }
-.third-card span,
-.second-card span,
-.first-card span {
+.third-card span, .second-card span, .first-card span {
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -137,21 +118,21 @@ li {
   position: absolute;
   top: 4rem;
   right: 0rem;
-  background-color: #457b9d;
+  background-color: #2196f3;
 }
 
 .second-card {
   position: absolute;
   top: 12rem;
   left: -4rem;
-  background-color: #f4a261;
+  background-color: #ed3833;
 }
 
 .third-card {
   position: absolute;
   top: 28rem;
   right: 2rem;
-  background-color: #e63946;
+  background-color: #2196f3;
 }
 
 .heading-light {
@@ -180,7 +161,7 @@ li {
   content: "";
   width: 100%;
   height: 0.5rem;
-  background-color: #1d3557;
+  background-color: #2196f3;
   position: absolute;
   top: 3.5rem;
   left: 0;
@@ -205,7 +186,7 @@ li {
 }
 @media (max-width: 550px) {
   .heading-light {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 }
 @media (max-width: 500px) {
@@ -218,7 +199,7 @@ li {
 }
 @media (max-width: 420px) {
   .heading-light {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 }
 @media (max-width: 380px) {
@@ -227,25 +208,29 @@ li {
   }
 }
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 7%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   background: #ffffff;
   z-index: 1000;
 }
-header .logo .logo-box {
+header .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header .wrapper .logo .logo-box {
   display: flex;
   flex-direction: column;
 }
-header .logo .logo-box p {
-  background-color: #1d3557;
+header .wrapper .logo .logo-box p {
+  background-color: #2196f3;
   width: 8rem;
   height: 2rem;
   color: #fff;
@@ -256,58 +241,58 @@ header .logo .logo-box p {
   font-weight: 500;
   transform: skewX(-20deg);
 }
-header .logo .logo-box h2 {
+header .wrapper .logo .logo-box h2 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   font-style: italic;
-  color: #0d182a;
+  color: #2196f3;
   letter-spacing: 0.5rem;
   position: relative;
 }
-header .logo .logo-box h2::before {
+header .wrapper .logo .logo-box h2::before {
   content: "";
   width: 100%;
   height: 0.2rem;
-  background-color: #e63946;
+  background-color: #2196f3;
   position: absolute;
   top: 37px;
   left: 0;
 }
-header .logo .logo-box h2::after {
+header .wrapper .logo .logo-box h2::after {
   content: "";
   width: 5rem;
   height: 1.5rem;
-  background-color: #1d3557;
+  background-color: #2196f3;
   position: absolute;
   top: 30px;
   left: -5px;
   transform: skewX(-20deg);
 }
-header .navbar {
+header .wrapper .navbar {
   display: flex;
 }
-header .navbar a {
+header .wrapper .navbar a {
   font-size: 2rem;
   margin-left: 2.5rem;
-  color: #0d182a;
+  color: #2196f3;
   position: relative;
 }
-header .navbar a:hover {
-  color: #e63946;
+header .wrapper .navbar a:hover {
+  color: #ed3833;
 }
-header #menu-bar {
+header .wrapper #menu-bar {
   display: none;
   font-size: 3rem;
-  color: #1d3557;
+  color: #2196f3;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  header #menu-bar {
+  header .wrapper #menu-bar {
     display: block;
   }
-  header .navbar {
+  header .wrapper .navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -317,7 +302,7 @@ header #menu-bar {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     display: none;
   }
-  header .navbar a {
+  header .wrapper .navbar a {
     margin: 1rem;
     display: block;
     padding: 1.3rem 0;
@@ -333,15 +318,17 @@ header #menu-bar {
       opacity: 0;
     }
   }
-  header .navbar.nav-toggle {
+  header .wrapper .navbar.nav-toggle {
     display: block;
   }
-  header .fa-times {
+  header .wrapper .fa-times {
     transform: rotate(180deg);
   }
 }
 .about {
+  max-width: 1200px;
   width: 100%;
+  margin: 3rem auto 0 auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -349,7 +336,6 @@ header #menu-bar {
   align-items: center;
   gap: 1rem;
   position: relative;
-  margin-top: 3rem;
 }
 .about .container-heading {
   width: 100%;
@@ -376,7 +362,7 @@ header #menu-bar {
   width: 40rem;
   height: 60rem;
   object-fit: contain;
-  box-shadow: 0.5rem 0.5rem 0 0 #e63946;
+  box-shadow: 0.5rem 0.5rem 0 0 #ed3833;
 }
 .about .about-container .about-content {
   width: 60%;
@@ -385,14 +371,13 @@ header #menu-bar {
 .about .about-container .about-content .about-text p {
   font-size: 1.4rem;
   line-height: 1.8;
-  color: #1d3557;
-  font-family: "Alkatra", cursive;
+  color: #464d5c;
+  text-align: justify;
 }
 .about .about-container .about-content .about-text .b-text {
   font-size: 1.6rem;
-  color: #e63946;
+  color: #ed3833;
   font-weight: 500;
-  font-family: "Alkatra", cursive;
 }
 .about .about-container .about-content .about-skill {
   width: 100%;
@@ -417,35 +402,35 @@ header #menu-bar {
 }
 .about .about-container .about-content .about-skill .html {
   width: 95%;
-  background-color: #04aa6d;
+  background-color: #2196f3;
 }
 .about .about-container .about-content .about-skill .css {
   width: 90%;
-  background-color: #2196f3;
+  background-color: #00adb5;
 }
 .about .about-container .about-content .about-skill .js {
   width: 70%;
-  background-color: #f44336;
+  background-color: #60c2a4;
 }
 .about .about-container .about-content .about-skill .react {
   width: 75%;
-  background-color: #808080;
+  background-color: #04aa6d;
 }
 .about .about-container .about-content .about-skill .bootstrap {
   width: 85%;
-  background-color: #f4a261;
+  background-color: #808080;
 }
 .about .about-container .about-content .about-skill .tailwind {
   width: 80%;
-  background-color: #e63946;
+  background-color: #f44336;
 }
 .about .about-container .about-content .about-skill .scss {
   width: 90%;
-  background-color: #0d182a;
+  background-color: #e44985;
 }
 .about .about-container .about-content .about-skill .node {
   width: 80%;
-  background-color: #e9c46a;
+  background-color: #605cb8;
 }
 
 @media (max-width: 768px) {
@@ -458,14 +443,6 @@ header #menu-bar {
   }
   .about .about-container .about-content {
     width: 100%;
-  }
-}
-@media (max-width: 550px) {
-  .about .about-container .about-content .about-text p {
-    font-size: 1.6rem;
-  }
-  .about .about-container .about-content .about-skill p {
-    font-size: 1.6rem;
   }
 }
 .project {
@@ -519,6 +496,21 @@ header #menu-bar {
 .project .box-container a .box .number img {
   width: 5rem;
 }
+.project .box-container a .box button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11111;
+  border: none;
+  outline: none;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 .project .box-container a .box .info {
   position: absolute;
   top: 70%;
@@ -529,19 +521,17 @@ header #menu-bar {
   opacity: 0;
 }
 .project .box-container a .box .info h3 {
-  color: var(--black);
+  color: #000000;
   font-size: 2.5rem;
 }
 .project .box-container a .box .info p {
   color: #666;
   font-size: 2rem;
 }
-.project .box-container a .box:hover h3,
-.project .box-container a .box:focus h3 {
+.project .box-container a .box:hover h3, .project .box-container a .box:focus h3 {
   text-decoration: underline;
 }
-.project .box-container a .box:hover .info,
-.project .box-container a .box:focus .info {
+.project .box-container a .box:hover .info, .project .box-container a .box:focus .info {
   transition-delay: 0.2s;
   opacity: 1;
   top: 50%;
@@ -600,8 +590,7 @@ header #menu-bar {
   cursor: pointer;
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
-.service .service-container .service-card:hover,
-.service .service-container .service-card:focus {
+.service .service-container .service-card:hover, .service .service-container .service-card:focus {
   transform: translateY(-7%);
 }
 .service .service-container .service-card .icon {
@@ -624,12 +613,7 @@ header #menu-bar {
   align-items: center;
   text-transform: capitalize;
 }
-@media (max-width: 550px) {
-  .service .service-container .service-card .name {
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
-}
+
 .contact {
   width: 100%;
   display: flex;
@@ -680,7 +664,7 @@ header #menu-bar {
 }
 .contact .contact-container .contact-form form .heading-form span {
   font-size: 2rem;
-  color: #2a9d8f;
+  color: #2196f3;
 }
 .contact .contact-container .contact-form form .item {
   width: 100%;
@@ -697,16 +681,15 @@ header #menu-bar {
   border-bottom: 0.1rem solid #000000;
   text-transform: capitalize;
 }
-.contact .contact-container .contact-form form .item input:focus ~ label,
-.contact .contact-container .contact-form form .item input:valid ~ label {
+.contact .contact-container .contact-form form .item input:focus ~ label, .contact .contact-container .contact-form form .item input:valid ~ label {
   top: -2rem;
   left: 0;
-  color: #2a9d8f;
+  color: #2196f3;
   font-size: 1.2rem;
 }
 .contact .contact-container .contact-form form .item label {
-  font-size: 1.4rem;
-  color: #2a9d8f;
+  font-size: 1rem;
+  color: #2196f3;
   position: absolute;
   top: 0;
   left: 0;
@@ -729,23 +712,10 @@ header #menu-bar {
   border-bottom: 0.1rem solid #000000;
   text-transform: capitalize;
 }
-.contact
-  .contact-container
-  .contact-form
-  form
-  .text-area
-  textarea:focus
-  ~ label,
-.contact
-  .contact-container
-  .contact-form
-  form
-  .text-area
-  textarea:valid
-  ~ label {
+.contact .contact-container .contact-form form .text-area textarea:focus ~ label, .contact .contact-container .contact-form form .text-area textarea:valid ~ label {
   top: -2rem;
   left: 0;
-  color: #2a9d8f;
+  color: #2196f3;
   font-size: 1.2rem;
 }
 .contact .contact-container .contact-form form .text-area label {
@@ -787,7 +757,7 @@ header #menu-bar {
   height: 7rem;
   display: flex;
   flex-direction: row;
-  background: #1d3557;
+  background: #2196f3;
   border-radius: 0.5rem;
   backdrop-filter: blur(1rem);
 }
@@ -841,7 +811,7 @@ header #menu-bar {
 }
 .footer {
   width: 100%;
-  background: #1d3557;
+  background: #2196f3;
 }
 .footer .box-container {
   display: flex;
@@ -859,6 +829,7 @@ header #menu-bar {
 .footer .box-container .f-box p {
   font-size: 1.5rem;
   color: #fff;
+  text-align: justify;
   padding: 0.5rem 0;
 }
 .footer .box-container .f-box a {
@@ -879,13 +850,15 @@ header #menu-bar {
   letter-spacing: 0.1rem;
 }
 .footer .credit a {
-  color: #e63946;
+  color: #ed3833;
 }
 
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
   padding-top: 9rem;
   overflow: hidden;
@@ -899,7 +872,7 @@ header #menu-bar {
   left: 0;
   z-index: -1;
   clip-path: circle(11.1% at 95% 9%);
-  background-color: #e63946;
+  background-color: #2196f3;
 }
 .hero-section .detail {
   width: 50%;
@@ -923,22 +896,21 @@ header #menu-bar {
 .hero-section .detail .personnel p {
   color: #000;
   font-size: 1.2rem;
-  font-family: "Alkatra", cursive;
 }
 .hero-section .detail .personnel h1 {
   font-size: 3rem;
 }
 .hero-section .detail .personnel h1 span {
   font-size: 3rem;
-  color: #e63946;
+  color: #ed3833;
 }
 .hero-section .detail .personnel span {
   width: min(600px, 100%);
   font-size: 1.5rem;
   font-weight: 500;
-  color: #2a9d8f;
+  color: #464d5c;
+  text-align: justify;
   text-transform: capitalize;
-  font-family: "Alkatra", cursive;
 }
 .hero-section .detail .social-links {
   width: 100%;
@@ -993,7 +965,7 @@ header #menu-bar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1d3557;
+  background-color: #2196f3;
   z-index: -2;
 }
 .hero-section .image-section .card-container {
@@ -1020,6 +992,17 @@ header #menu-bar {
     width: 100%;
     order: 2;
   }
+  .hero-section .detail .personnel {
+    align-items: center;
+  }
+  .hero-section .detail .social-links {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .hero-section .detail .call-to-action {
+    justify-content: center;
+    padding-left: 0;
+  }
   .hero-section .image-section {
     width: 100%;
     height: 40vh;
@@ -1033,4 +1016,4 @@ header #menu-bar {
   .hero-section .detail .personnel h2 {
     font-size: 2.5rem;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
