@@ -435,7 +435,7 @@ header .wrapper #menu-bar {
 .about {
   max-width: 1200px;
   width: 100%;
-  margin: 3rem auto 0 auto;
+  margin: 5rem auto 0 auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -457,6 +457,8 @@ header .wrapper #menu-bar {
   align-items: center;
   flex-direction: row;
   gap: 1rem;
+  row-gap: 3rem;
+  margin-top: 4rem;
 }
 .about .about-container .about-image {
   width: 40%;
@@ -470,7 +472,7 @@ header .wrapper #menu-bar {
   height: 60rem;
   object-fit: contain;
   box-shadow: 0.3rem 0.3rem 0 0 #ed3833, -0.3rem -0.3rem 0 0 #ed3833;
-  animation: boxshadow 3s linear infinite;
+  animation: boxshadow 3s ease-in-out infinite;
 }
 
 @keyframes boxshadow {
@@ -567,7 +569,7 @@ header .wrapper #menu-bar {
 }
 .project {
   max-width: 1120px;
-  margin: 3rem auto 1rem auto;
+  margin: 5rem auto 1rem auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -589,6 +591,7 @@ header .wrapper #menu-bar {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 3rem;
+  margin-top: 3rem;
 }
 .project .box-container a .box {
   margin: 1rem;
@@ -676,7 +679,7 @@ header .wrapper #menu-bar {
 
 .service {
   max-width: 1120px;
-  margin: 3rem auto 3rem auto;
+  margin: 5rem auto 3rem auto;
   padding-top: 2rem;
   width: 100%;
   display: flex;
@@ -698,7 +701,9 @@ header .wrapper #menu-bar {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  row-gap: 4rem;
   padding-top: 3rem;
+  margin-top: 3rem;
 }
 .service .service-container .service-card {
   width: 18rem;
@@ -780,9 +785,10 @@ header .wrapper #menu-bar {
 .contact .contact-container .contact-form form .heading-form {
   width: 100%;
   text-align: center;
+  margin-top: 2rem;
 }
 .contact .contact-container .contact-form form .heading-form span {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #2196f3;
 }
 .contact .contact-container .contact-form form .item {
@@ -834,7 +840,7 @@ header .wrapper #menu-bar {
 }
 .contact .contact-container .info {
   width: 50%;
-  height: 47rem;
+  height: 54rem;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
