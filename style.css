@@ -95,65 +95,6 @@ li {
   background-color: #ed3833;
 }
 
-.third-card,
-.second-card,
-.first-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 0.5rem;
-  width: 14rem;
-  height: 6rem;
-  color: #fff;
-}
-.third-card p,
-.second-card p,
-.first-card p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-}
-.third-card p span,
-.second-card p span,
-.first-card p span {
-  font-size: 2rem;
-  font-weight: 500;
-}
-.third-card p i,
-.second-card p i,
-.first-card p i {
-  font-size: 1.4rem;
-}
-.third-card span,
-.second-card span,
-.first-card span {
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.first-card {
-  position: absolute;
-  top: 4rem;
-  right: 0rem;
-  background-color: #2196f3;
-}
-
-.second-card {
-  position: absolute;
-  top: 12rem;
-  left: -4rem;
-  background-color: #ed3833;
-}
-
-.third-card {
-  position: absolute;
-  top: 28rem;
-  right: 2rem;
-  background-color: #2196f3;
-}
-
 .heading-light {
   width: 100%;
   position: absolute;
@@ -344,6 +285,7 @@ header .wrapper #menu-bar {
     transform: rotate(180deg);
   }
 }
+
 .hero-section {
   display: flex;
   justify-content: center;
@@ -351,8 +293,8 @@ header .wrapper #menu-bar {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding-top: 9rem;
   overflow: hidden;
+  padding: 1rem;
 }
 .hero-section::before {
   content: "";
@@ -369,27 +311,22 @@ header .wrapper #menu-bar {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 1rem;
   flex-wrap: wrap;
 }
 .hero-section .detail .personnel {
   width: 100%;
-  margin: 0 auto 2rem auto;
-  padding-left: 5rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
 }
 .hero-section .detail .personnel p {
-  color: #000;
-  font-size: 1.2rem;
+  color: rgb(59, 49, 49);
+  font-size: 1.6rem;
 }
 .hero-section .detail .personnel h1 {
   font-size: 3rem;
+  margin-top: 1rem;
 }
 .hero-section .detail .personnel h1 span {
   font-size: 3rem;
@@ -397,19 +334,18 @@ header .wrapper #menu-bar {
 }
 .hero-section .detail .personnel span {
   width: min(600px, 100%);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #464d5c;
   text-align: justify;
   text-transform: capitalize;
-  line-height: 1.8;
-  letter-spacing: 1px;
+  margin-top: 1rem;
+  line-height: 1.5;
 }
 .hero-section .detail .social-links {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 6rem;
   gap: 1rem;
 }
 .hero-section .detail .social-links img {
@@ -419,19 +355,18 @@ header .wrapper #menu-bar {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 5rem;
   gap: 1rem;
 }
 .hero-section .detail .boxs-with-detail {
-  width: min(600px, 100%);
+  width: 100%;
   display: grid;
-  justify-items: center;
+  justify-items: flex-start;
+  align-items: center;
   margin-top: 2rem;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .hero-section .image-section {
-  position: relative;
   width: 50%;
   height: 100%;
   display: flex;
@@ -439,7 +374,6 @@ header .wrapper #menu-bar {
   align-items: center;
 }
 .hero-section .image-section .image-container {
-  position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
@@ -447,32 +381,7 @@ header .wrapper #menu-bar {
   align-items: center;
 }
 .hero-section .image-section .image-container img {
-  width: 40rem;
-}
-.hero-section .image-section .image-container::before {
-  content: "";
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #2196f3;
-  z-index: -2;
-}
-.hero-section .image-section .card-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-.hero-section .image-section .card-container .wrapper {
-  width: 40rem;
-  height: 40rem;
-  position: relative;
+  transform: scale(1);
 }
 
 @media (max-width: 992px) {
@@ -487,7 +396,6 @@ header .wrapper #menu-bar {
   }
   .hero-section .detail .personnel {
     align-items: center;
-    padding-left: 0;
   }
   .hero-section .detail .social-links {
     justify-content: center;
@@ -497,18 +405,31 @@ header .wrapper #menu-bar {
     justify-content: center;
     padding-left: 0;
   }
+  .hero-section .detail .boxs-with-detail {
+    justify-content: center;
+    justify-items: center;
+  }
   .hero-section .image-section {
     width: 100%;
-    height: 40vh;
     order: 1;
   }
+}
+@media (max-width: 500px) {
   .hero-section .image-section .image-container img {
-    width: 30rem;
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 450px) {
+  .hero-section .image-section .image-container img {
+    transform: scale(0.8);
   }
 }
 @media (max-width: 400px) {
   .hero-section .detail .personnel h2 {
     font-size: 2.5rem;
+  }
+  .hero-section .image-section .image-container img {
+    transform: scale(0.7);
   }
 }
 .about {
@@ -691,7 +612,7 @@ header .wrapper #menu-bar {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 11111;
+  z-index: 111;
   border: none;
   outline: none;
   background-color: #2196f3;
@@ -883,10 +804,10 @@ header .wrapper #menu-bar {
   font-size: 1.2rem;
 }
 .contact .contact-container .contact-form form .item label {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #2196f3;
   position: absolute;
-  top: 0;
+  top: -0.5rem;
   left: 0;
   letter-spacing: 0.1rem;
   transition: 0.5s;
@@ -924,7 +845,7 @@ header .wrapper #menu-bar {
   top: -2rem;
   left: 0;
   color: #2196f3;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .contact .contact-container .contact-form form .text-area label {
   color: #000;
