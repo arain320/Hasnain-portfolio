@@ -347,10 +347,10 @@ header .wrapper #menu-bar {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 .hero-section .detail .social-links img {
-  width: 3rem;
+  width: 3.5rem;
 }
 .hero-section .detail .call-to-action {
   width: 100%;
