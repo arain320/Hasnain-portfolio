@@ -504,6 +504,7 @@ header .wrapper #menu-bar {
 .about .about-container .about-content .about-text a {
   margin: 1rem 0;
   width: 160px;
+  text-align: center;
 }
 .about .about-container .about-content .about-text h3 {
   font-size: 2rem;
