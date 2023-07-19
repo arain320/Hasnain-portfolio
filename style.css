@@ -489,6 +489,11 @@ header .wrapper #menu-bar {
   width: 60%;
   padding: 1rem;
 }
+.about .about-container .about-content .about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .about .about-container .about-content .about-text p {
   font-size: 1.6rem;
   line-height: 1.8;
@@ -498,9 +503,10 @@ header .wrapper #menu-bar {
 }
 .about .about-container .about-content .about-text a {
   margin: 1rem 0;
+  width: 160px;
 }
-.about .about-container .about-content .about-text .b-text {
-  font-size: 1.8rem;
+.about .about-container .about-content .about-text h3 {
+  font-size: 2rem;
   color: #ed3833;
   font-weight: 600;
   margin-top: 1rem;
